@@ -17,7 +17,7 @@ export default function Footer() {
   return (
     <footer className="border-t border-border/40 bg-muted/30">
       <div className="mx-auto max-w-7xl px-4 py-12 lg:px-8">
-        <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
+        <div className="flex flex-col lg:flex-row lg:justify-between lg:items-start gap-8">
           {/* Brand Column */}
           <div className="space-y-4">
             <div className="text-foreground font-bold text-xl tracking-tight">
@@ -31,8 +31,8 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Legal Column */}
-          <div>
+          {/* Legal Column - Aligned to right */}
+          <div className="lg:text-right">
             <h3 className="font-semibold text-foreground mb-4">Legal</h3>
             <ul className="space-y-3">
               {legalLinks.map((link) => (

@@ -7,6 +7,7 @@ import { useState, useCallback, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import useEmblaCarousel from "embla-carousel-react";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 export function Testimonials() {
   const t = useTranslations("testimonials");
@@ -16,6 +17,11 @@ export function Testimonials() {
     align: "start",
     slidesToScroll: 1,
   });
+
+  // Placeholder avatars - these should be replaced with actual musician photos
+  const getAvatarUrl = (name: string) => {
+    return `https://ui-avatars.com/api/?name=${encodeURIComponent(name)}&size=80&background=random`;
+  };
 
   const [canScrollPrev, setCanScrollPrev] = useState(false);
   const [canScrollNext, setCanScrollNext] = useState(false);
@@ -66,16 +72,18 @@ export function Testimonials() {
         <div className="relative">
           {/* Carousel */}
           <div className="overflow-hidden" ref={emblaRef}>
-            <div className="flex gap-6">
+            <div className="flex gap-6 -ml-6">
               {testimonialKeys.map((key, index) => {
                 const isExpanded = expandedIndex === index;
                 const quote = t(`items.${key}.quote`);
                 const shouldTruncate = quote.length > 200;
 
+                const authorName = t(`items.${key}.author`);
+                
                 return (
                   <div
                     key={key}
-                    className="flex-[0_0_85%] md:flex-[0_0_45%] lg:flex-[0_0_38%] min-w-0"
+                    className="flex-[0_0_85%] md:flex-[0_0_45%] lg:flex-[0_0_38%] min-w-0 pl-6"
                   >
                     <div className="rounded-lg bg-card p-6 shadow-sm border border-border/50 h-full flex flex-col hover:shadow-md transition-shadow">
                       <Quote className="h-8 w-8 text-primary/30 mb-4" />
@@ -99,13 +107,23 @@ export function Testimonials() {
                           </button>
                         )}
                       </blockquote>
-                      <div className="border-t border-border pt-4">
-                        <p className="font-semibold text-foreground text-sm">
-                          {t(`items.${key}.author`)}
-                        </p>
-                        <p className="text-xs text-muted-foreground mt-1">
-                          {t(`items.${key}.role`)}
-                        </p>
+                      <div className="border-t border-border pt-4 flex items-center gap-3">
+                        <div className="relative w-12 h-12 rounded-full flex-shrink-0 overflow-hidden">
+                          <Image
+                            src={getAvatarUrl(authorName)}
+                            alt={authorName}
+                            fill
+                            className="object-cover"
+                          />
+                        </div>
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">
+                            {authorName}
+                          </p>
+                          <p className="text-xs text-muted-foreground mt-1">
+                            {t(`items.${key}.role`)}
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>

@@ -44,18 +44,24 @@ Last Updated: ${new Date().toISOString().split("T")[0]}`;
  * Business information section
  */
 function buildBusinessInfo(): string {
-  const { business, founder } = baseMetadata;
+  const { business, luthier } = baseMetadata;
 
   return `## Business Information
 
 **Legal Name:** ${business.name}
 **VAT Number:** ${business.vat}
 **Address:** ${business.address}
-**Capital:** ${business.capital}
+**Phone:** ${business.phone}
+**Email:** ${business.email}
 
-**Founder/Owner:** ${founder.name}
-**Role:** ${founder.jobTitle}
-**LinkedIn:** ${founder.linkedin}`;
+**Luthier:** ${luthier.name}
+**Birth Year:** ${luthier.birthYear}
+**Birth Place:** ${luthier.birthPlace}
+**Training:** ${luthier.training}
+**Diploma Year:** ${luthier.diplomaYear}
+**Teacher:** ${luthier.teacher}
+**Workshop Location:** ${luthier.workshop}
+**Specializations:** ${luthier.specialization.join(", ")}`;
 }
 
 /**
@@ -120,12 +126,8 @@ function buildContactInfo(): string {
   return `## Contact Information
 
 **Email:** ${social.email}
-**Booking/Appointments:** ${baseMetadata.booking}
-
-**Social Media:**
-- LinkedIn: ${social.linkedin}
-- Twitter/X: ${social.twitter}
-- GitHub: ${social.github}`;
+**Phone:** ${social.phone}
+**Booking/Appointments:** ${baseMetadata.booking}`;
 }
 
 /**
@@ -166,13 +168,13 @@ export function buildLlmsJson() {
     },
     business: {
       ...baseMetadata.business,
-      founder: baseMetadata.founder,
+      luthier: baseMetadata.luthier,
     },
     services: baseMetadata.services,
     contact: {
       email: baseMetadata.social.email,
+      phone: baseMetadata.social.phone,
       booking: baseMetadata.booking,
-      social: baseMetadata.social,
     },
     technical: {
       framework: "Next.js",

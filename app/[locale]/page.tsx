@@ -3,8 +3,6 @@ import { buildMetadata } from "@/lib/seo";
 import JsonLd from "@/components/JsonLd";
 import { getOrganizationSchema, getWebSiteSchema } from "@/lib/jsonld";
 import { Hero } from "@/components/landing/Hero";
-import { About } from "@/components/landing/About";
-import { Instruments } from "@/components/landing/Instruments";
 import { Gallery } from "@/components/landing/Gallery";
 import { Testimonials } from "@/components/landing/Testimonials";
 import { Contact } from "@/components/landing/Contact";
@@ -46,8 +44,6 @@ export default function HomePage() {
 
       {/* Main Content */}
       <Hero />
-      <About />
-      <Instruments />
       <Gallery />
       <Testimonials />
       <Contact />

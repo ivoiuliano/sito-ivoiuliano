@@ -45,14 +45,14 @@ export function HeroBackground({
             src={image}
             alt=""
             fill
-            className="object-cover grayscale"
+            className="object-cover object-top grayscale"
             priority={index === 0}
             quality={90}
           />
         </div>
       ))}
       {/* Light overlay for text readability */}
-      <div className="absolute inset-0 bg-black/50" />
+      <div className="absolute inset-0 bg-black/80" />
     </div>
   );
 }
