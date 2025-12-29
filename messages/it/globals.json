@@ -1,0 +1,49 @@
+{
+    "nav": {
+        "home": "Home",
+        "about": "Chi Sono",
+        "instruments": "Strumenti",
+        "gallery": "Galleria",
+        "testimonials": "Testimonianze",
+        "contact": "Contatti"
+    },
+    "footer": {
+        "tagline": "Maestro Liutaio - Strumenti ad Arco Artigianali",
+        "rights": "Tutti i diritti riservati.",
+        "workshop": "Laboratorio",
+        "visitByAppointment": "Vi prego di fissare un appuntamento per visitare il mio laboratorio",
+        "links": {
+            "privacy": "Privacy Policy",
+            "terms": "Termini di Servizio",
+            "cookies": "Cookie Policy"
+        },
+        "social": {
+            "email": "Email",
+            "phone": "Telefono"
+        }
+    },
+    "cta": {
+        "getStarted": "Inizia Ora",
+        "learnMore": "Scopri di più",
+        "contactUs": "Contattami",
+        "viewGallery": "Vedi la Galleria",
+        "makeAppointment": "Fissa un Appuntamento",
+        "readMore": "Leggi di più"
+    },
+    "aria": {
+        "mainNavigation": "Navigazione principale",
+        "skipToContent": "Vai al contenuto principale",
+        "toggleMenu": "Apri/Chiudi menu",
+        "closeMenu": "Chiudi menu",
+        "languageSelector": "Seleziona lingua",
+        "socialLinks": "Collegamenti social media",
+        "themeToggle": "Cambia tema"
+    },
+    "cookies": {
+        "title": "Utilizziamo i cookie",
+        "description": "Utilizziamo i cookie per garantirti la migliore esperienza sul nostro sito web. Continuando a utilizzare questo sito, accetti il nostro utilizzo dei cookie.",
+        "accept": "Accetta tutti",
+        "decline": "Rifiuta",
+        "learnMore": "Scopri di più"
+    }
+}

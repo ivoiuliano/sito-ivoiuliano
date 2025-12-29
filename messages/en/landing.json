@@ -1,0 +1,96 @@
+{
+    "hero": {
+        "title": "Ivo Iuliano",
+        "subtitle": "Master Luthier",
+        "description": "Handcrafted violins, violas, cellos and baroque instruments. Combining traditional methods with profound understanding of sound.",
+        "cta": {
+            "primary": "View Gallery",
+            "secondary": "Contact Me"
+        }
+    },
+    "about": {
+        "title": "About Me",
+        "content": "I was born in Duisburg (Germany) in 1970 and lived there until 1981, attended the Scuola Internazionale di Liuteria (IPIALL) in Cremona from 1994 to 1998, where I obtained a diploma, under the supervision of Maestro Ernesto Vaia. Since 1999 I have been interested in the viola da gamba and also in the historical settings of instruments of the violin family. The last years I have been working mostly on instruments in modern setting, using my knowledge from my earlier experience working on ancient instruments. I work in Rovereto, Trento (Italy)."
+    },
+    "instruments": {
+        "title": "Instruments",
+        "subtitle": "Crafted with passion and precision",
+        "violin": {
+            "title": "Violin",
+            "description": "Handcrafted violins with rich, nuanced sound and excellent balance across all registers."
+        },
+        "viola": {
+            "title": "Viola",
+            "description": "Violas with warm, dark tone and remarkable projection, perfect for solo and chamber music."
+        },
+        "cello": {
+            "title": "Cello",
+            "description": "Cellos with beautiful color, intensity and a wide palette from intimate darkness to great openness."
+        },
+        "baroque": {
+            "title": "Baroque Instruments",
+            "description": "Viola da gamba and instruments of the violin family in historical settings."
+        }
+    },
+    "testimonials": {
+        "title": "What Musicians Say",
+        "subtitle": "Trusted by professional musicians worldwide",
+        "readMore": "Read more",
+        "showLess": "Show less",
+        "items": {
+            "gothoni": {
+                "quote": "I spent a long time looking for a violin capable of producing exactly the kind of sound I imagine when I play. Luckily, this summer I came across an instrument made by Ivo Iuliano in 2024. It is a deep-, healthy-sounding and richly nuanced violin that performs excellently and with great balance across all registers. I keep discovering new qualities in the instrument, and I feel it offers endless possibilities in terms of color and expression. It has become my trusted instrument, one that carries beautifully in any concert hall.",
+                "author": "Mark Gothoni",
+                "role": "Professor für Violine, Universität der Künste Berlin"
+            },
+            "furusawa": {
+                "quote": "My violin, built in 2015 by Ivo Iuliano has opened many doors for me. I don't think all of it would have been possible without it. Having never been so enthusiastic about a modern violin, my opinion is being shared by so many colleagues and audiences.",
+                "author": "Kaori Furusawa",
+                "role": "Violinist, Prizewinner at several international competitions"
+            },
+            "rohde": {
+                "quote": "Die Instrumente von Ivo Iuliano packten mich ab der ersten Sekunde. Ein sehr inniges, beseeltes sowie kraftvolles Tembre aus einer großen Epoche, das einem aus dem Herzen spricht und in den Saal hinaus strömt!",
+                "author": "Hartmut Rohde",
+                "role": "Universität der Künste Berlin, Violist | Conductor, Mozart Piano Quartet"
+            },
+            "konishi": {
+                "quote": "Since playing my Iuliano violin (2017) I am finally feeling able to use a whole palate of expression, likewise as a soloist with big symphony orchestra and in chamber music ensembles or in duo with piano. It is an instrument for life!",
+                "author": "Mao Konishi",
+                "role": "Violinist, Prizewinner at several international competitions"
+            },
+            "todicescu": {
+                "quote": "This outstanding viola was crafted by Ivo Iuliano for me in 2019. It has a warm and projecting sound which is ideal for solo and chamber music and is a high quality instrument.",
+                "author": "Alex Todicescu",
+                "role": "Violist"
+            },
+            "pasquier": {
+                "quote": "La rencontre avec mon alto puis avec Ivo dans le Nord de l'Italie furent 2 moments forts dans ma carrière. L'impression de renouer enfin avec les immenses instruments italiens anciens fut renforcée en voyant la façon dont il travaille dans son atelier. Outre la beauté du son, sa puissance, sa rondeur et sa profondeur, le plus important pour moi reste le timbre, et de ce point de vue aussi mon alto a une âme. Merci Ivo.",
+                "author": "Cyrill Pasquier",
+                "role": "Violist"
+            },
+            "rome": {
+                "quote": "I am honestly grateful to be one of the musicians playing the instrument made by Ivo Iuliano. It is a beautiful work with unlimited sound diversity, very comfortable to play, always projecting sound clearly. It is great experience to perform in any kind of acoustics. Looking forward every new day working with it. Very happy....",
+                "author": "Maja Rome",
+                "role": "Musician"
+            }
+        }
+    },
+    "gallery": {
+        "title": "Gallery",
+        "subtitle": "A selection of my work"
+    },
+    "contact": {
+        "title": "Contact",
+        "subtitle": "Please make an appointment and visit my workshop",
+        "labels": {
+            "workshop": "Workshop",
+            "phone": "Phone",
+            "email": "Email"
+        },
+        "address": "Via Prato, 50",
+        "city": "38068 Rovereto (TN)",
+        "country": "Italy",
+        "phone": "Tel: +39 3496739825",
+        "email": "Email: info@ivoiuliano.it"
+    }
+}

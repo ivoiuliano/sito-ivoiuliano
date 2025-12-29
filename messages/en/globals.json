@@ -1,0 +1,49 @@
+{
+    "nav": {
+        "home": "Home",
+        "about": "About",
+        "instruments": "Instruments",
+        "gallery": "Gallery",
+        "testimonials": "Testimonials",
+        "contact": "Contact"
+    },
+    "footer": {
+        "tagline": "Master Luthier - Handcrafted String Instruments",
+        "rights": "All rights reserved.",
+        "workshop": "Workshop",
+        "visitByAppointment": "Please make an appointment and visit my workshop",
+        "links": {
+            "privacy": "Privacy Policy",
+            "terms": "Terms of Service",
+            "cookies": "Cookie Policy"
+        },
+        "social": {
+            "email": "Email",
+            "phone": "Phone"
+        }
+    },
+    "cta": {
+        "getStarted": "Get Started",
+        "learnMore": "Learn More",
+        "contactUs": "Contact Us",
+        "viewGallery": "View Gallery",
+        "makeAppointment": "Make an Appointment",
+        "readMore": "Read More"
+    },
+    "aria": {
+        "mainNavigation": "Main navigation",
+        "skipToContent": "Skip to main content",
+        "toggleMenu": "Toggle menu",
+        "closeMenu": "Close menu",
+        "languageSelector": "Select language",
+        "socialLinks": "Social media links",
+        "themeToggle": "Toggle theme"
+    },
+    "cookies": {
+        "title": "We use cookies",
+        "description": "We use cookies to ensure you get the best experience on our website. By continuing to use this site, you accept our use of cookies.",
+        "accept": "Accept all",
+        "decline": "Decline",
+        "learnMore": "Learn more"
+    }
+}

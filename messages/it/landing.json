@@ -1,0 +1,96 @@
+{
+    "hero": {
+        "title": "Ivo Iuliano",
+        "subtitle": "Maestro Liutaio",
+        "description": "Violini, viole, violoncelli e strumenti barocchi realizzati a mano. Combinando metodi tradizionali con una profonda comprensione del suono.",
+        "cta": {
+            "primary": "Vedi la Galleria",
+            "secondary": "Contattami"
+        }
+    },
+    "about": {
+        "title": "Chi Sono",
+        "content": "Sono nato a Duisburg (Germania) nel 1970 e vi ho vissuto fino al 1981. Ho frequentato la Scuola Internazionale di Liuteria (IPIALL) a Cremona dal 1994 al 1998, dove ho ottenuto il diploma, sotto la supervisione del Maestro Ernesto Vaia. Dal 1999 mi interesso della viola da gamba e anche degli assetti storici degli strumenti della famiglia del violino. Negli ultimi anni ho lavorato principalmente su strumenti in assetto moderno, utilizzando le mie conoscenze derivanti dalla mia precedente esperienza con strumenti antichi. Lavoro a Rovereto, Trento (Italia)."
+    },
+    "instruments": {
+        "title": "Strumenti",
+        "subtitle": "Realizzati con passione e precisione",
+        "violin": {
+            "title": "Violino",
+            "description": "Violini artigianali con suono ricco, sfumato ed eccellente equilibrio in tutti i registri."
+        },
+        "viola": {
+            "title": "Viola",
+            "description": "Viole con tono caldo e scuro e notevole proiezione, perfette per musica da camera e solistica."
+        },
+        "cello": {
+            "title": "Violoncello",
+            "description": "Violoncelli con bellissimo colore, intensità e un'ampia tavolozza dall'oscurità intima alla grande apertura."
+        },
+        "baroque": {
+            "title": "Strumenti Barocchi",
+            "description": "Viola da gamba e strumenti della famiglia del violino in assetti storici."
+        }
+    },
+    "testimonials": {
+        "title": "Cosa Dicono i Musicisti",
+        "subtitle": "La fiducia di musicisti professionisti in tutto il mondo",
+        "readMore": "Leggi di più",
+        "showLess": "Mostra meno",
+        "items": {
+            "gothoni": {
+                "quote": "Ho passato molto tempo alla ricerca di un violino capace di produrre esattamente il tipo di suono che immagino quando suono. Fortunatamente, quest'estate mi sono imbattuto in uno strumento realizzato da Ivo Iuliano nel 2024. È un violino dal suono profondo, sano e riccamente sfumato che si comporta in modo eccellente e con grande equilibrio in tutti i registri. Continuo a scoprire nuove qualità nello strumento e sento che offre infinite possibilità in termini di colore ed espressione. È diventato il mio strumento di fiducia, che si porta magnificamente in qualsiasi sala da concerto.",
+                "author": "Mark Gothoni",
+                "role": "Professor für Violine, Universität der Künste Berlin"
+            },
+            "furusawa": {
+                "quote": "Il mio violino, costruito nel 2015 da Ivo Iuliano, mi ha aperto molte porte. Non credo che tutto ciò sarebbe stato possibile senza di esso. Non essendo mai stata così entusiasta di un violino moderno, la mia opinione è condivisa da tanti colleghi e pubblico.",
+                "author": "Kaori Furusawa",
+                "role": "Violinista, vincitrice di diversi concorsi internazionali"
+            },
+            "rohde": {
+                "quote": "Die Instrumente von Ivo Iuliano packten mich ab der ersten Sekunde. Ein sehr inniges, beseeltes sowie kraftvolles Tembre aus einer großen Epoche, das einem aus dem Herzen spricht und in den Saal hinaus strömt!",
+                "author": "Hartmut Rohde",
+                "role": "Universität der Künste Berlin, Violist | Conductor, Mozart Piano Quartet"
+            },
+            "konishi": {
+                "quote": "Da quando suono il mio violino Iuliano (2017) mi sento finalmente in grado di utilizzare un'intera tavolozza di espressione, sia come solista con una grande orchestra sinfonica che in ensemble di musica da camera o in duo con pianoforte. È uno strumento per la vita!",
+                "author": "Mao Konishi",
+                "role": "Violinista, vincitrice di diversi concorsi internazionali"
+            },
+            "todicescu": {
+                "quote": "Questa straordinaria viola è stata realizzata da Ivo Iuliano per me nel 2019. Ha un suono caldo e proiettante che è ideale per la musica da camera e solistica ed è uno strumento di alta qualità.",
+                "author": "Alex Todicescu",
+                "role": "Violista"
+            },
+            "pasquier": {
+                "quote": "La rencontre avec mon alto puis avec Ivo dans le Nord de l'Italie furent 2 moments forts dans ma carrière. L'impression de renouer enfin avec les immenses instruments italiens anciens fut renforcée en voyant la façon dont il travaille dans son atelier. Outre la beauté du son, sa puissance, sa rondeur et sa profondeur, le plus important pour moi reste le timbre, et de ce point de vue aussi mon alto a une âme. Merci Ivo.",
+                "author": "Cyrill Pasquier",
+                "role": "Violista"
+            },
+            "rome": {
+                "quote": "Sono sinceramente grata di essere una delle musiciste che suonano uno strumento realizzato da Ivo Iuliano. È un bellissimo lavoro con illimitata diversità sonora, molto comodo da suonare, che proietta sempre il suono in modo chiaro. È una grande esperienza esibirsi in qualsiasi tipo di acustica. Non vedo l'ora di lavorarci ogni nuovo giorno. Molto felice....",
+                "author": "Maja Rome",
+                "role": "Musicista"
+            }
+        }
+    },
+    "gallery": {
+        "title": "Galleria",
+        "subtitle": "Una selezione del mio lavoro"
+    },
+    "contact": {
+        "title": "Contatti",
+        "subtitle": "Vi prego di fissare un appuntamento per visitare il mio laboratorio",
+        "labels": {
+            "workshop": "Laboratorio",
+            "phone": "Telefono",
+            "email": "Email"
+        },
+        "address": "Via Prato, 50",
+        "city": "38068 Rovereto (TN)",
+        "country": "Italia",
+        "phone": "Tel: +39 3496739825",
+        "email": "Email: info@ivoiuliano.it"
+    }
+}
