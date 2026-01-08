@@ -51,9 +51,21 @@ export function Testimonials() {
 
   useEffect(() => {
     if (!emblaApi) return;
-    onSelect();
-    emblaApi.on("select", onSelect);
-    emblaApi.on("reInit", onSelect);
+
+    // Define a handler to wrap the current onSelect
+    const handleSelect = () => onSelect();
+
+    // Call once on mount instead of synchronously
+    setTimeout(handleSelect, 0);
+
+    emblaApi.on("select", handleSelect);
+    emblaApi.on("reInit", handleSelect);
+
+    // Clean up listeners on unmount or emblaApi change
+    return () => {
+      emblaApi.off("select", handleSelect);
+      emblaApi.off("reInit", handleSelect);
+    };
   }, [emblaApi, onSelect]);
 
   const testimonialKeys = [
@@ -88,7 +100,7 @@ export function Testimonials() {
                 const shouldTruncate = quote.length > 200;
 
                 const authorName = t(`items.${key}.author`);
-                
+
                 return (
                   <div
                     key={key}
