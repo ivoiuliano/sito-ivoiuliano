@@ -43,6 +43,7 @@ export function buildMetadata({
           width: 1200,
           height: 630,
           alt: fullTitle,
+          type: "image/jpeg",
         },
       ],
     },
@@ -51,7 +52,10 @@ export function buildMetadata({
       title: fullTitle,
       description: fullDescription,
       creator: baseMetadata.twitterHandle,
-      images: [baseMetadata.ogImage],
+      images: {
+        url: baseMetadata.ogImage,
+        alt: fullTitle,
+      },
     },
     manifest: baseMetadata.manifest,
   };

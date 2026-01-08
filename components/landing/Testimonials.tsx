@@ -18,9 +18,18 @@ export function Testimonials() {
     slidesToScroll: 1,
   });
 
-  // Placeholder avatars - these should be replaced with actual musician photos
-  const getAvatarUrl = (name: string) => {
-    return `https://ui-avatars.com/api/?name=${encodeURIComponent(name)}&size=80&background=random`;
+  // Map testimonial keys to their corresponding photos
+  const getAvatarPath = (key: string): string => {
+    const avatarMap: Record<string, string> = {
+      gothoni: "/images/persone/Mark_Gothoni.png",
+      furusawa: "/images/persone/Kaori_Furusawa.png",
+      rohde: "/images/persone/Hartmund_Rhode.png",
+      konishi: "/images/persone/Mao_Konishi.png",
+      todicescu: "/images/persone/Alex_todicescu.png",
+      pasquier: "/images/persone/Cyrill_Pasquier.png",
+      rome: "/images/persone/Maja_rome.png",
+    };
+    return avatarMap[key] || "/images/persone/default.png";
   };
 
   const [canScrollPrev, setCanScrollPrev] = useState(false);
@@ -85,7 +94,7 @@ export function Testimonials() {
                     key={key}
                     className="flex-[0_0_85%] md:flex-[0_0_45%] lg:flex-[0_0_38%] min-w-0 pl-6"
                   >
-                    <div className="rounded-lg bg-card p-6 shadow-sm border border-border/50 h-full flex flex-col hover:shadow-md transition-shadow">
+                    <div className="squircle-lg bg-card p-6 shadow-sm border border-border/50 h-full flex flex-col hover:shadow-md transition-shadow">
                       <Quote className="h-8 w-8 text-primary/30 mb-4" />
                       <blockquote className="flex-grow mb-6">
                         <p
@@ -108,12 +117,14 @@ export function Testimonials() {
                         )}
                       </blockquote>
                       <div className="border-t border-border pt-4 flex items-center gap-3">
-                        <div className="relative w-12 h-12 rounded-full flex-shrink-0 overflow-hidden">
+                        <div className="relative w-12 h-12 squircle-img flex-shrink-0 overflow-hidden bg-muted">
                           <Image
-                            src={getAvatarUrl(authorName)}
+                            src={getAvatarPath(key)}
                             alt={authorName}
                             fill
                             className="object-cover"
+                            sizes="48px"
+                            unoptimized
                           />
                         </div>
                         <div>
@@ -139,7 +150,7 @@ export function Testimonials() {
               size="icon"
               onClick={scrollPrev}
               disabled={!canScrollPrev}
-              className="rounded-md"
+              className="squircle"
             >
               <ChevronLeft className="h-4 w-4" />
             </Button>
@@ -148,7 +159,7 @@ export function Testimonials() {
               size="icon"
               onClick={scrollNext}
               disabled={!canScrollNext}
-              className="rounded-md"
+              className="squircle"
             >
               <ChevronRight className="h-4 w-4" />
             </Button>

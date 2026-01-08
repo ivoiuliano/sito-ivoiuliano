@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { Cookie } from "lucide-react";
+import { Cookie, Check, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
     Card,
@@ -38,6 +38,7 @@ const CookieConsent = React.forwardRef<HTMLDivElement, CookieConsentProps>(
     ) => {
         const [isOpen, setIsOpen] = React.useState(false);
         const [hide, setHide] = React.useState(false);
+        const [showFloatingButton, setShowFloatingButton] = React.useState(false);
         const t = useTranslations('cookies');
 
         const handleAccept = React.useCallback(() => {
@@ -46,6 +47,7 @@ const CookieConsent = React.forwardRef<HTMLDivElement, CookieConsentProps>(
                 "cookieConsent=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/";
             setTimeout(() => {
                 setHide(true);
+                setShowFloatingButton(true);
             }, 700);
             onAcceptCallback();
         }, [onAcceptCallback]);
@@ -57,9 +59,18 @@ const CookieConsent = React.forwardRef<HTMLDivElement, CookieConsentProps>(
                 "cookieConsent=false; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/";
             setTimeout(() => {
                 setHide(true);
+                setShowFloatingButton(true);
             }, 700);
             onDeclineCallback();
         }, [onDeclineCallback]);
+
+        const handleReopenConsent = React.useCallback(() => {
+            setHide(false);
+            setShowFloatingButton(false);
+            setTimeout(() => {
+                setIsOpen(true);
+            }, 50);
+        }, []);
 
         React.useEffect(() => {
             try {
@@ -69,14 +80,13 @@ const CookieConsent = React.forwardRef<HTMLDivElement, CookieConsentProps>(
                     setIsOpen(false);
                     setTimeout(() => {
                         setHide(true);
+                        setShowFloatingButton(true);
                     }, 700);
                 }
             } catch (error) {
                 console.warn("Cookie consent error:", error);
             }
         }, [demo]);
-
-        if (hide) return null;
 
         const containerClasses = cn(
             "fixed z-50 transition-all duration-700",
@@ -100,6 +110,54 @@ const CookieConsent = React.forwardRef<HTMLDivElement, CookieConsentProps>(
         const declineText = t('decline');
         const titleText = t('title');
         const learnMoreText = t('learnMore');
+        const managePreferencesText = t('managePreferences');
+        const statusAcceptedText = t('statusAccepted');
+        const statusDeclinedText = t('statusDeclined');
+
+        // Floating button to reopen consent dialog
+        if (showFloatingButton && hide) {
+            // Check current cookie consent status
+            const cookiesAccepted = document.cookie.includes("cookieConsent=true");
+            const tooltipText = cookiesAccepted ? statusAcceptedText : statusDeclinedText;
+
+            return (
+                <div className="fixed bottom-4 left-4 z-50">
+                    <Button
+                        onClick={handleReopenConsent}
+                        size="icon"
+                        className={cn(
+                            "relative h-12 w-12 shadow-2xl",
+                            cookiesAccepted
+                                ? "bg-primary text-primary-foreground hover:bg-primary/90"
+                                : "bg-muted text-muted-foreground hover:bg-muted/90",
+                            "transition-all duration-300 hover:scale-110",
+                            "squircle shadow-lg"
+                        )}
+                        aria-label={tooltipText}
+                        title={tooltipText}
+                    >
+                        <Cookie className="h-5 w-5" />
+                        {/* Status indicator badge */}
+                        <span
+                            className={cn(
+                                "absolute -top-1 -right-1 h-4 w-4 squircle-sm flex items-center justify-center",
+                                cookiesAccepted
+                                    ? "bg-gray-500 text-white"
+                                    : "bg-gray-500 text-white"
+                            )}
+                        >
+                            {cookiesAccepted ? (
+                                <Check className="h-2 w-2" strokeWidth={2} />
+                            ) : (
+                                <X className="h-2 w-2" strokeWidth={2} />
+                            )}
+                        </span>
+                    </Button>
+                </div>
+            );
+        }
+
+        if (hide) return null;
 
         if (variant === "default") {
             return (

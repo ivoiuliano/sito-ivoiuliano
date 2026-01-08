@@ -9,6 +9,7 @@ import { ThemeToggle } from "@/components/ThemeToggle";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { baseMetadata } from "@/lib/meta";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 /**
  * Header Component
@@ -40,7 +41,7 @@ export default function Header() {
     };
 
     return (
-        <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+        <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-backdrop-filter:bg-background/60">
             <nav
                 className="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-8"
                 aria-label={tAria("mainNavigation")}
@@ -49,7 +50,8 @@ export default function Header() {
                 <div className="flex lg:flex-1">
                     <Link href="/" className="-m-1.5 p-1.5">
                         <span className="sr-only">Home</span>
-                        <div className="text-foreground font-bold text-xl tracking-tight">
+                        <div className="text-foreground font-bold text-xl tracking-tight flex items-center gap-2">
+                            <Image src="/images/logo_ivo.svg" className="invert dark:invert-0" alt={baseMetadata.siteName} width={40} height={40} />
                             {baseMetadata.siteName}
                         </div>
                     </Link>

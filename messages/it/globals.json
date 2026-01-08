@@ -44,6 +44,9 @@
         "description": "Utilizziamo i cookie per garantirti la migliore esperienza sul nostro sito web. Continuando a utilizzare questo sito, accetti il nostro utilizzo dei cookie.",
         "accept": "Accetta tutti",
         "decline": "Rifiuta",
-        "learnMore": "Scopri di più"
+        "learnMore": "Scopri di più",
+        "managePreferences": "Gestisci preferenze cookie",
+        "statusAccepted": "Cookie accettati - Clicca per modificare",
+        "statusDeclined": "Cookie rifiutati - Clicca per modificare"
     }
 }
