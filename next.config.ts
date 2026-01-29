@@ -5,6 +5,8 @@ const withNextIntl = createNextIntlPlugin();
 
 /** @type {import('next').NextConfig} */
 const nextConfig: NextConfig = {
+  output: "export",
+
   // Compression
   compress: true,
 
@@ -13,14 +15,15 @@ const nextConfig: NextConfig = {
     optimizeCss: true,
   },
 
-  // Image optimization
+  // Image (unoptimized for static export - no Image Optimization API)
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: 'ui-avatars.com',
-        port: '',
-        pathname: '/api/**',
+        protocol: "https",
+        hostname: "ui-avatars.com",
+        port: "",
+        pathname: "/api/**",
       },
     ],
   },

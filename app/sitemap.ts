@@ -3,6 +3,8 @@ import { baseMetadata } from "@/lib/meta";
 import { routing } from "@/i18n/routing";
 import { routes } from "@/lib/routes";
 
+export const dynamic = "force-static";
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const sitemapEntries: MetadataRoute.Sitemap = [];
 
@@ -18,9 +20,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
     for (const locale of routing.locales) {
       // Other locales use URL with prefix
-      alternates.languages[
-        locale
-      ] = `${baseMetadata.url}/${locale}${route.path}`;
+      alternates.languages[locale] =
+        `${baseMetadata.url}/${locale}${route.path}`;
     }
 
     // Add entry with default URL and all alternates

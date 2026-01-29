@@ -1,0 +1,93 @@
+# Ivo Iuliano
+
+Ivo Iuliano, master luthier in Rovereto, Italy. Handcrafted violins, violas, cellos, and baroque instruments. Trained at IPIALL Cremona under Maestro Ernesto Vaia.
+
+Primary URL: https://www.ivoiuliano.it
+Last Updated: 2026-01-29
+
+---
+
+## Business Information
+
+**Legal Name:** Ivo Iuliano
+**VAT Number:** IT 01866260225
+**Address:** Via Prato, 50 - 38068 - Rovereto (TN) - Italy
+
+**Luthier:** Ivo Iuliano
+**Birth:** 1970, Duisburg, Germany
+**Training:** Scuola Internazionale di Liuteria (IPIALL) - Cremona
+**Diploma:** 1998 under Maestro Ernesto Vaia
+**Workshop:** Rovereto, Trento (Italy)
+**Specialization:** Violin, Viola, Cello, Viola da Gamba, Baroque Instruments, Historical Settings
+
+---
+
+## Services Offered
+
+### New Instruments
+
+**Type:** Lutherie
+**Description:** Handcrafted violins, violas, and cellos in modern setting, using traditional methods and finest materials.
+
+### Baroque Instruments
+
+**Type:** Historical Lutherie
+**Description:** Historical instruments including viola da gamba and instruments of the violin family in baroque setting.
+
+### Restoration & Setup
+
+**Type:** Restoration
+**Description:** Professional restoration, setup, and maintenance of string instruments.
+
+---
+
+## Site Structure
+
+**Available Languages:** en, it
+**Default Language:** en
+
+**Main Routes:**
+- **Home** (/): Ivo Iuliano - Master Luthier - Handcrafted violins, violas, cellos and baroque instruments
+
+**System Routes:**
+- Sitemap: https://www.ivoiuliano.it/sitemap.xml
+- Robots: https://www.ivoiuliano.it/robots.txt
+- LLMs: https://www.ivoiuliano.it/llms.txt
+
+**URL Pattern:**
+- Default locale: `https://www.ivoiuliano.it{route}`
+- Other locales: `https://www.ivoiuliano.it/{locale}{route}`
+
+---
+
+## Contact Information
+
+**Email:** info@ivoiuliano.it
+**Phone:** +39 3496739825
+**Booking/Appointments:** mailto:info@ivoiuliano.it
+
+**Business Contact:**
+- Email: info@ivoiuliano.it
+- Phone: +39 3496739825
+
+---
+
+## Technical Information
+
+**Framework:** Next.js (App Router)
+**Generation:** Static Site Generation (SSG)
+**Internationalization:** next-intl
+**UI Library:** shadcn/ui with Tailwind CSS
+**Animation:** Framer Motion
+
+**SEO Features:**
+- Dynamic metadata generation
+- JSON-LD structured data
+- Multilingual sitemap
+- Optimized Open Graph tags
+
+**Performance:**
+- Static generation for optimal loading times
+- Image optimization with Next.js Image
+- Code splitting and lazy loading
+- Mobile-first responsive design

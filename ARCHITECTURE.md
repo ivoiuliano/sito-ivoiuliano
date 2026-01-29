@@ -238,12 +238,12 @@ const textContent = buildLlmsTxt();
 const jsonData = buildLlmsJson();
 ```
 
-#### 2. Route (`app/llms.txt/route.ts`)
+#### 2. Build-time generation (`scripts/generate-llms-txt.ts`)
 
-Serves the compiled information at `/llms.txt`:
-- Plain text format optimized for LLM consumption
-- Cached for performance (1 hour)
-- Statically generated at build time
+With static export (`output: 'export'`), `/llms.txt` is generated at build time:
+- The `prebuild` script runs `scripts/generate-llms-txt.ts`, which calls `buildLlmsTxt()` and writes to `public/llms.txt`
+- Next.js copies `public/` into `out/`, so `/llms.txt` is served as a static asset
+- No server or Route Handler required
 
 ### Benefits
 
@@ -845,8 +845,6 @@ project/
 │   │   ├── page.tsx           # Homepage
 │   │   ├── about/page.tsx     # About page
 │   │   └── layout.tsx         # Locale layout
-│   ├── llms.txt/
-│   │   └── route.ts           # LLMs.txt API route
 │   ├── sitemap.ts             # Sitemap generator
 │   ├── robots.ts              # robots.txt generator
 │   ├── layout.tsx             # Root layout
@@ -881,6 +879,9 @@ project/
 ├── i18n/
 │   ├── routing.ts             # Locale routing config
 │   └── request.ts             # Server-side i18n
+│
+├── scripts/
+│   └── generate-llms-txt.ts   # Build-time llms.txt generator
 │
 ├── hooks/
 │   └── use-mobile.ts          # Custom React hooks

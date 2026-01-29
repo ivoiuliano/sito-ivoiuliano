@@ -1,4 +1,4 @@
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { buildMetadata } from "@/lib/seo";
 import JsonLd from "@/components/JsonLd";
 import { getOrganizationSchema, getWebSiteSchema } from "@/lib/jsonld";
@@ -35,7 +35,9 @@ export async function generateMetadata({ params }: Props) {
   });
 }
 
-export default function HomePage() {
+export default async function HomePage({ params }: Props) {
+  const { locale } = await params;
+  setRequestLocale(locale);
   return (
     <>
       {/* Structured Data */}

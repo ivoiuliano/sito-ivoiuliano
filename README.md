@@ -71,7 +71,6 @@ npm run build
 │   │   ├── about/         # About page
 │   │   ├── services/      # Services page
 │   │   └── contact/       # Contact page
-│   ├── llms.txt/          # AI assistant integration
 │   ├── sitemap.ts         # Sitemap generator
 │   ├── robots.ts          # Robots.txt
 │   └── layout.tsx         # Root layout
@@ -241,26 +240,49 @@ AI assistants can access `/llms.txt` to get structured information about your bu
 
 ## 🚀 Deployment
 
-### Vercel (Recommended)
+### Vercel (sito statico)
 
-```bash
-vercel
-```
+Il progetto usa `output: 'export'`: Vercel rileva l’export statico e serve la cartella `out/` senza configurazione extra.
+
+**1. Push del codice su Git**
+
+Assicurati che il progetto sia su GitHub, GitLab o Bitbucket.
+
+**2. Importa il progetto su Vercel**
+
+- Vai su [vercel.com](https://vercel.com) e accedi
+- **Add New…** → **Project**
+- Importa il repository del sito
+- Vercel imposta automaticamente:
+  - **Framework Preset:** Next.js
+  - **Build Command:** `npm run build` (esegue anche `prebuild` → genera `llms.txt`)
+  - **Output Directory:** `out` (usato in automatico con static export)
+
+**3. Variabili d’ambiente (opzionale)**
+
+Se usi analytics, in **Settings → Environment Variables** aggiungi:
+
+- `NEXT_PUBLIC_GA_ID` – Google Analytics
+- `NEXT_PUBLIC_META_PIXEL_ID` – Meta Pixel
+
+**4. Deploy**
+
+Clicca **Deploy**. Ogni push sul branch connesso (es. `main`) farà un nuovo deploy.
+
+**Dominio:** in **Settings → Domains** puoi collegare un dominio personalizzato (es. `www.ivoiuliano.it`).
 
 ### Netlify
 
 ```bash
 npm run build
-# Deploy the 'out' folder
+# In Netlify: Build command = npm run build, Publish directory = out
 ```
 
-### Other Platforms
-
-The template exports a static site in the `out` folder:
+### Altri host statici
 
 ```bash
 npm run build
-# Upload the 'out' folder to any static hosting
+# Carica la cartella `out/` su qualsiasi hosting statico (Cloudflare Pages, S3+CloudFront, ecc.)
 ```
 
 ## 📚 Documentation
