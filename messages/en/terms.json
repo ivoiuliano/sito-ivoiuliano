@@ -1,0 +1,55 @@
+{
+  "title": "Terms of Service",
+  "description": "Terms and conditions of use of the Ivo Iuliano - Master Luthier website.",
+  "lastUpdated": "Last updated",
+  "intro": "Welcome to the website of Ivo Iuliano, Master Luthier. By accessing and using this website you agree to be bound by these Terms of Service. If you do not agree, please do not use the site.",
+  "sectionOrder": [
+    "acceptance",
+    "use",
+    "content",
+    "contact",
+    "links",
+    "limitation",
+    "governingLaw",
+    "changes",
+    "contactInfo"
+  ],
+  "sections": {
+    "acceptance": {
+      "title": "Acceptance of terms",
+      "body": "By using this website you confirm that you have read, understood, and accept these Terms of Service and our Privacy Policy. These terms apply to all visitors and users of the site."
+    },
+    "use": {
+      "title": "Use of the website",
+      "body": "You may use this website for lawful purposes only. You must not use it in any way that could damage, disable, or impair the site or interfere with others' use. You must not attempt to gain unauthorized access to any systems or data. The content (text, images, design) is for general information about our lutherie work and is subject to change without notice."
+    },
+    "content": {
+      "title": "Intellectual property and content",
+      "body": "All content on this site (including but not limited to text, images, logos, and design) is owned by Ivo Iuliano or used with permission. You may not copy, reproduce, distribute, or create derivative works without prior written consent. You may view and print pages for personal, non-commercial use only."
+    },
+    "contact": {
+      "title": "Contact and enquiries",
+      "body": "Enquiries sent via the contact form or email are subject to our Privacy Policy. We aim to respond within a reasonable time but do not guarantee any specific response time. Appointments and commissions are subject to separate agreements."
+    },
+    "links": {
+      "title": "Third-party links",
+      "body": "This website may contain links to third-party sites. We are not responsible for the content or practices of those sites. Use of third-party links is at your own risk."
+    },
+    "limitation": {
+      "title": "Limitation of liability",
+      "body": "To the fullest extent permitted by law, we shall not be liable for any indirect, incidental, or consequential damages arising from your use of this website. The site and its content are provided \"as is\". We do not warrant that the site will be uninterrupted or error-free."
+    },
+    "governingLaw": {
+      "title": "Governing law",
+      "body": "These Terms are governed by the laws of Italy. Any disputes shall be subject to the exclusive jurisdiction of the courts of Trento, Italy."
+    },
+    "changes": {
+      "title": "Changes to the terms",
+      "body": "We may update these Terms of Service from time to time. The \"Last updated\" date will be revised. Continued use of the site after changes constitutes acceptance of the updated terms."
+    },
+    "contactInfo": {
+      "title": "Contact",
+      "body": "For questions about these Terms of Service, contact Ivo Iuliano at info@ivoiuliano.it or Via Prato, 50 - 38068 Rovereto (TN), Italy."
+    }
+  }
+}

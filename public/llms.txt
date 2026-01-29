@@ -49,6 +49,9 @@ Last Updated: 2026-01-29
 **Main Routes:**
 - **Home** (/): Ivo Iuliano - Master Luthier - Handcrafted violins, violas, cellos and baroque instruments
 - **Blog** (/blog): Articles and news from the workshop
+- **Privacy Policy** (/privacy): Privacy policy and personal data processing
+- **Terms of Service** (/terms): Terms and conditions of use of the website
+- **Cookie Policy** (/cookies): Information on the use of cookies
 
 **System Routes:**
 - Sitemap: https://www.ivoiuliano.it/sitemap.xml

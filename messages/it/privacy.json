@@ -1,0 +1,55 @@
+{
+  "title": "Privacy Policy",
+  "description": "Informativa sulla privacy e sul trattamento dei dati personali - Ivo Iuliano Maestro Liutaio.",
+  "lastUpdated": "Ultimo aggiornamento",
+  "intro": "La presente Informativa sulla privacy descrive come Ivo Iuliano (\"noi\", \"titolare del trattamento\") raccoglie, utilizza e protegge i tuoi dati personali quando utilizzi questo sito web. Ci impegniamo a proteggere la tua privacy in conformità con la normativa applicabile, incluso il Regolamento UE 2016/679 (GDPR).",
+  "sectionOrder": [
+    "dataController",
+    "dataCollected",
+    "purpose",
+    "recipients",
+    "retention",
+    "rights",
+    "cookies",
+    "changes",
+    "contact"
+  ],
+  "sections": {
+    "dataController": {
+      "title": "Titolare del trattamento",
+      "body": "Il titolare del trattamento è Ivo Iuliano, con laboratorio in Via Prato, 50 - 38068 Rovereto (TN), Italia. Puoi contattarci a info@ivoiuliano.it o al telefono +39 3496739825."
+    },
+    "dataCollected": {
+      "title": "Dati che raccogliamo",
+      "body": "Potremmo raccogliere: (1) Dati che fornisci quando ci contatti (nome, email, telefono, contenuto del messaggio). (2) Dati tecnici come indirizzo IP, tipo di browser e informazioni sul dispositivo quando visiti il sito. (3) Dati relativi ai cookie come descritto nella nostra Cookie Policy, previo tuo consenso."
+    },
+    "purpose": {
+      "title": "Finalità e base giuridica",
+      "body": "Trattiamo i tuoi dati per: rispondere alle richieste e gestire gli appuntamenti; migliorare il sito e l'esperienza utente; adempiere obblighi di legge. La base giuridica è il tuo consenso (es. modulo di contatto, cookie), l'esecuzione di un contratto o misure precontrattuali, o il nostro legittimo interesse a gestire e migliorare il sito."
+    },
+    "recipients": {
+      "title": "Destinatari e trasferimenti",
+      "body": "I tuoi dati possono essere trattati dai fornitori del sito e della posta elettronica. Non vendiamo i tuoi dati. In caso di utilizzo di servizi fuori dallo Spazio economico europeo, ci assicuriamo che siano previste garanzie adeguate (es. decisioni di adeguatezza o clausole contrattuali tipo)."
+    },
+    "retention": {
+      "title": "Conservazione",
+      "body": "Conserviamo i tuoi dati solo per il tempo necessario alle finalità sopra indicate: i dati di contatto e richieste per il tempo necessario a gestire e dare seguito alla richiesta, e oltre se richiesto dalla legge; i log tecnici e di accesso nei limiti consentiti dalla legge; i dati relativi ai cookie secondo la nostra Cookie Policy."
+    },
+    "rights": {
+      "title": "I tuoi diritti",
+      "body": "In base al GDPR hai diritto a: accedere ai tuoi dati personali; chiedere rettifica o cancellazione; limitare o opporti al trattamento; portabilità dei dati ove applicabile; revocare il consenso in qualsiasi momento; proporre reclamo a un'autorità di controllo (es. Garante per la protezione dei dati personali in Italia). Per esercitare questi diritti, contattaci a info@ivoiuliano.it."
+    },
+    "cookies": {
+      "title": "Cookie",
+      "body": "Questo sito può utilizzare cookie e tecnologie simili. Per i dettagli completi, consulta la nostra Cookie Policy."
+    },
+    "changes": {
+      "title": "Modifiche a questa informativa",
+      "body": "Potremmo aggiornare periodicamente la presente Informativa sulla privacy. La data \"Ultimo aggiornamento\" in alto sarà aggiornata. Ti invitiamo a consultare questa pagina periodicamente."
+    },
+    "contact": {
+      "title": "Contatti",
+      "body": "Per qualsiasi domanda su questa Privacy Policy o sui tuoi dati personali, contattaci a info@ivoiuliano.it o all'indirizzo sopra indicato."
+    }
+  }
+}

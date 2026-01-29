@@ -1,0 +1,55 @@
+{
+  "title": "Privacy Policy",
+  "description": "Privacy policy and personal data processing for Ivo Iuliano - Master Luthier.",
+  "lastUpdated": "Last updated",
+  "intro": "This Privacy Policy describes how Ivo Iuliano (\"we\", \"our\", or \"the data controller\") collects, uses, and protects your personal data when you use this website. We are committed to protecting your privacy in accordance with applicable data protection laws, including the EU General Data Protection Regulation (GDPR).",
+  "sectionOrder": [
+    "dataController",
+    "dataCollected",
+    "purpose",
+    "recipients",
+    "retention",
+    "rights",
+    "cookies",
+    "changes",
+    "contact"
+  ],
+  "sections": {
+    "dataController": {
+      "title": "Data controller",
+      "body": "The data controller is Ivo Iuliano, with workshop at Via Prato, 50 - 38068 Rovereto (TN), Italy. You can contact us at info@ivoiuliano.it or by phone at +39 3496739825."
+    },
+    "dataCollected": {
+      "title": "Data we collect",
+      "body": "We may collect: (1) Data you provide when contacting us (name, email, phone, message content). (2) Technical data such as IP address, browser type, and device information when you visit the site. (3) Cookie data as described in our Cookie Policy, if you consent."
+    },
+    "purpose": {
+      "title": "Purpose and legal basis",
+      "body": "We process your data to: respond to your enquiries and manage appointments; improve the website and user experience; comply with legal obligations. The legal basis is your consent (e.g. contact form, cookies), performance of a contract or pre-contractual steps, or our legitimate interest in operating and improving the website."
+    },
+    "recipients": {
+      "title": "Recipients and transfers",
+      "body": "Your data may be processed by our website and email providers. We do not sell your data. If we use services outside the European Economic Area, we ensure appropriate safeguards (e.g. adequacy decisions or standard contractual clauses) are in place."
+    },
+    "retention": {
+      "title": "Retention",
+      "body": "We retain your data only for as long as necessary for the purposes above: contact and enquiry data for the time needed to handle and follow up your request, and longer if required by law; technical and access logs as permitted by law; cookie-related data according to our Cookie Policy."
+    },
+    "rights": {
+      "title": "Your rights",
+      "body": "Under the GDPR you have the right to: access your personal data; request correction or erasure; restrict or object to processing; data portability where applicable; withdraw consent at any time; lodge a complaint with a supervisory authority (e.g. Garante per la protezione dei dati personali in Italy). To exercise these rights, contact us at info@ivoiuliano.it."
+    },
+    "cookies": {
+      "title": "Cookies",
+      "body": "This site may use cookies and similar technologies. For full details, see our Cookie Policy."
+    },
+    "changes": {
+      "title": "Changes to this policy",
+      "body": "We may update this Privacy Policy from time to time. The \"Last updated\" date at the top will be revised. We encourage you to review this page periodically."
+    },
+    "contact": {
+      "title": "Contact",
+      "body": "For any questions about this Privacy Policy or your personal data, please contact us at info@ivoiuliano.it or at the address above."
+    }
+  }
+}

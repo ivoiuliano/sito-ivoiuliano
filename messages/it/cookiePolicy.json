@@ -1,0 +1,45 @@
+{
+  "title": "Cookie Policy",
+  "description": "Informazioni sull'utilizzo dei cookie sul sito Ivo Iuliano - Maestro Liutaio.",
+  "lastUpdated": "Ultimo aggiornamento",
+  "intro": "La presente Cookie Policy spiega cosa sono i cookie, come li utilizziamo su questo sito e come puoi gestire le tue preferenze. Utilizziamo cookie e tecnologie simili in conformità alla normativa applicabile e, ove richiesto, con il tuo consenso.",
+  "sectionOrder": [
+    "whatAreCookies",
+    "howWeUse",
+    "types",
+    "thirdParty",
+    "manage",
+    "changes",
+    "contact"
+  ],
+  "sections": {
+    "whatAreCookies": {
+      "title": "Cosa sono i cookie",
+      "body": "I cookie sono piccoli file di testo che vengono memorizzati sul tuo dispositivo (computer, tablet o smartphone) quando visiti un sito web. Sono ampiamente utilizzati per far funzionare i siti in modo più efficiente, per ricordare le tue preferenze e per fornire informazioni al titolare del sito. I cookie possono essere \"di prima parte\" (impostati da noi) o \"di terze parti\" (impostati da altri servizi che utilizziamo)."
+    },
+    "howWeUse": {
+      "title": "Come utilizziamo i cookie",
+      "body": "Utilizziamo i cookie per: (1) Ricordare la tua scelta sul consenso ai cookie in modo da non chiedere nuovamente a ogni visita. (2) Comprendere come viene utilizzato il sito (es. tramite analisi) per migliorare contenuti e esperienza utente, solo se hai accettato i cookie non essenziali. (3) Supportare funzionalità opzionali come la preferenza del tema, ove implementata."
+    },
+    "types": {
+      "title": "Tipi di cookie che utilizziamo",
+      "body": "Cookie strettamente necessari: sono indispensabili per il funzionamento del sito (es. banner del consenso). Non richiedono il tuo consenso. Cookie funzionali e analitici: potremmo utilizzarli per analizzare il traffico e migliorare il sito (es. Google Analytics, Meta Pixel). Sono attivati solo se clicchi \"Accetta tutti\" nel banner dei cookie. Puoi revocare il consenso in qualsiasi momento tramite il pulsante cookie o le impostazioni del browser."
+    },
+    "thirdParty": {
+      "title": "Cookie di terze parti",
+      "body": "Se accetti i cookie analitici o di marketing, servizi di terze parti (come Google Analytics o Meta) potrebbero impostare i propri cookie. Il loro utilizzo è regolato dalle rispettive informative privacy. Ti consigliamo di consultare tali informative per i dettagli."
+    },
+    "manage": {
+      "title": "Gestione delle preferenze",
+      "body": "Puoi modificare le tue preferenze sui cookie in qualsiasi momento cliccando sull'icona dei cookie (solitamente in basso nella pagina). Puoi anche bloccare o eliminare i cookie tramite le impostazioni del browser. Tieni presente che il blocco di alcuni cookie potrebbe influire sul funzionamento del sito o sulla tua esperienza."
+    },
+    "changes": {
+      "title": "Modifiche a questa policy",
+      "body": "Potremmo aggiornare periodicamente questa Cookie Policy per riflettere modifiche nelle nostre pratiche o nella normativa. La data \"Ultimo aggiornamento\" in alto sarà aggiornata. Ti invitiamo a consultare questa pagina periodicamente."
+    },
+    "contact": {
+      "title": "Contatti",
+      "body": "Per qualsiasi domanda sull'uso dei cookie, contattaci a info@ivoiuliano.it. Per maggiori informazioni sui tuoi dati personali, consulta la nostra Privacy Policy."
+    }
+  }
+}

@@ -33,7 +33,7 @@ export default function Footer() {
 
           {/* Legal Column - Aligned to right */}
           <div className="lg:text-right">
-            <h3 className="font-semibold text-foreground mb-4">Legal</h3>
+            <h3 className="font-semibold text-foreground mb-4">{t("legal")}</h3>
             <ul className="space-y-3">
               {legalLinks.map((link) => (
                 <li key={link.name}>

@@ -47,6 +47,27 @@ export const routes: RouteConfig[] = [
     title: "Blog",
     description: "Articles and news from the workshop",
   },
+  {
+    path: "/privacy",
+    priority: 0.5,
+    changeFrequency: "yearly",
+    title: "Privacy Policy",
+    description: "Privacy policy and personal data processing",
+  },
+  {
+    path: "/terms",
+    priority: 0.5,
+    changeFrequency: "yearly",
+    title: "Terms of Service",
+    description: "Terms and conditions of use of the website",
+  },
+  {
+    path: "/cookies",
+    priority: 0.5,
+    changeFrequency: "yearly",
+    title: "Cookie Policy",
+    description: "Information on the use of cookies",
+  },
 ];
 
 /**

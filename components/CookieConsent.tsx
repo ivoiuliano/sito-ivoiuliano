@@ -13,6 +13,7 @@ import {
 } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/routing";
 
 // Define prop types
 interface CookieConsentProps extends React.HTMLAttributes<HTMLDivElement> {
@@ -31,7 +32,7 @@ const CookieConsent = React.forwardRef<HTMLDivElement, CookieConsentProps>(
             onAcceptCallback = () => { },
             onDeclineCallback = () => { },
             className,
-            learnMoreHref = "/pages/cookies",
+            learnMoreHref,
             ...props
         },
         ref,
@@ -174,12 +175,12 @@ const CookieConsent = React.forwardRef<HTMLDivElement, CookieConsentProps>(
                                 {description}
                             </CardDescription>
                             <div className="text-xs">
-                                <a
-                                    href={learnMoreHref}
+                                <Link
+                                    href="/cookies"
                                     className="text-primary underline underline-offset-4 hover:no-underline font-medium transition-colors"
                                 >
                                     {learnMoreText}
-                                </a>
+                                </Link>
                             </div>
                         </CardContent>
                         <CardFooter className="flex gap-3 pt-2">

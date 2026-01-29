@@ -1,0 +1,55 @@
+{
+  "title": "Termini di Servizio",
+  "description": "Termini e condizioni di utilizzo del sito web Ivo Iuliano - Maestro Liutaio.",
+  "lastUpdated": "Ultimo aggiornamento",
+  "intro": "Benvenuto sul sito web di Ivo Iuliano, Maestro Liutaio. Accedendo e utilizzando questo sito accetti di essere vincolato dai presenti Termini di Servizio. In caso contrario, ti preghiamo di non utilizzare il sito.",
+  "sectionOrder": [
+    "acceptance",
+    "use",
+    "content",
+    "contact",
+    "links",
+    "limitation",
+    "governingLaw",
+    "changes",
+    "contactInfo"
+  ],
+  "sections": {
+    "acceptance": {
+      "title": "Accettazione dei termini",
+      "body": "Utilizzando questo sito confermi di aver letto, compreso e accettato i presenti Termini di Servizio e la nostra Privacy Policy. Questi termini si applicano a tutti i visitatori e utenti del sito."
+    },
+    "use": {
+      "title": "Utilizzo del sito",
+      "body": "È consentito utilizzare questo sito solo per scopi leciti. Non è consentito utilizzarlo in modo da danneggiare, disabilitare o pregiudicare il sito o interferire con l'uso da parte di altri. Non è consentito tentare l'accesso non autorizzato a sistemi o dati. I contenuti (testi, immagini, grafica) sono a scopo informativo generale sulla nostra attività di liuteria e possono essere modificati senza preavviso."
+    },
+    "content": {
+      "title": "Proprietà intellettuale e contenuti",
+      "body": "Tutti i contenuti di questo sito (inclusi ma non limitati a testi, immagini, loghi e grafica) sono di proprietà di Ivo Iuliano o utilizzati con autorizzazione. Non è consentito copiare, riprodurre, distribuire o creare opere derivate senza consenso scritto preventivo. È consentita la visualizzazione e stampa delle pagine solo per uso personale e non commerciale."
+    },
+    "contact": {
+      "title": "Contatti e richieste",
+      "body": "Le richieste inviate tramite modulo di contatto o email sono regolate dalla nostra Privacy Policy. Ci impegniamo a rispondere entro tempi ragionevoli ma non garantiamo un tempo di risposta specifico. Appuntamenti e commissioni sono regolati da accordi separati."
+    },
+    "links": {
+      "title": "Collegamenti a siti terzi",
+      "body": "Questo sito può contenere collegamenti a siti di terzi. Non siamo responsabili dei contenuti o delle pratiche di tali siti. L'uso dei collegamenti a siti terzi è a tuo rischio."
+    },
+    "limitation": {
+      "title": "Limitazione di responsabilità",
+      "body": "Nei limiti massimi consentiti dalla legge, non saremo responsabili per danni indiretti, incidentali o consequenziali derivanti dall'uso di questo sito. Il sito e i suoi contenuti sono forniti \"così come sono\". Non garantiamo che il sito sia ininterrotto o esente da errori."
+    },
+    "governingLaw": {
+      "title": "Legge applicabile",
+      "body": "I presenti Termini sono regolati dalla legge italiana. Eventuali controversie saranno di competenza esclusiva del Foro di Trento."
+    },
+    "changes": {
+      "title": "Modifiche ai termini",
+      "body": "Potremmo aggiornare periodicamente i presenti Termini di Servizio. La data \"Ultimo aggiornamento\" sarà aggiornata. L'uso continuato del sito dopo le modifiche costituisce accettazione dei termini aggiornati."
+    },
+    "contactInfo": {
+      "title": "Contatti",
+      "body": "Per domande su questi Termini di Servizio, contatta Ivo Iuliano a info@ivoiuliano.it o Via Prato, 50 - 38068 Rovereto (TN), Italia."
+    }
+  }
+}
