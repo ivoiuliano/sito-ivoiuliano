@@ -66,7 +66,7 @@ export const getWebSiteSchema = (): JsonLdObject => ({
 export const getWebPageSchema = (
   url: string,
   title: string,
-  description: string
+  description: string,
 ): JsonLdObject => ({
   "@context": "https://schema.org",
   "@type": "WebPage",
@@ -83,7 +83,9 @@ export const getWebPageSchema = (
 });
 
 // Service - Lutherie Services
-export const getServiceSchema = (serviceKey: keyof typeof baseMetadata.services): JsonLdObject => {
+export const getServiceSchema = (
+  serviceKey: keyof typeof baseMetadata.services,
+): JsonLdObject => {
   const service = baseMetadata.services[serviceKey];
   return {
     "@context": "https://schema.org",
@@ -106,7 +108,7 @@ export const getBlogPostingSchema = (
   description: string,
   publishedDate: string,
   modifiedDate?: string,
-  image?: string
+  image?: string,
 ): JsonLdObject => ({
   "@context": "https://schema.org",
   "@type": "BlogPosting",
@@ -132,9 +134,24 @@ export const getBlogPostingSchema = (
     : undefined,
 });
 
+// BreadcrumbList (path = path without locale, e.g. "/blog", "/blog/slug")
+export const getBreadcrumbSchema = (
+  items: Array<{ name: string; path: string }>,
+  locale: string,
+): JsonLdObject => ({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: items.map((item, i) => ({
+    "@type": "ListItem",
+    position: i + 1,
+    name: item.name,
+    item: `${baseMetadata.url}/${locale}${item.path}`,
+  })),
+});
+
 // FAQPage
 export const getFAQPageSchema = (
-  faqs: Array<{ question: string; answer: string }>
+  faqs: Array<{ question: string; answer: string }>,
 ): JsonLdObject => ({
   "@context": "https://schema.org",
   "@type": "FAQPage",

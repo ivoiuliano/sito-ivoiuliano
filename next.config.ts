@@ -5,8 +5,6 @@ const withNextIntl = createNextIntlPlugin();
 
 /** @type {import('next').NextConfig} */
 const nextConfig: NextConfig = {
-  output: "export",
-
   // Compression
   compress: true,
 
@@ -15,9 +13,8 @@ const nextConfig: NextConfig = {
     optimizeCss: true,
   },
 
-  // Image (unoptimized for static export - no Image Optimization API)
+  // Image optimization (dynamic mode - Next.js Image Optimization API available)
   images: {
-    unoptimized: true,
     remotePatterns: [
       {
         protocol: "https",

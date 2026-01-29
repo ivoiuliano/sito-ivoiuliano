@@ -1,6 +1,6 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { Link, usePathname } from "@/i18n/routing";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
@@ -24,21 +24,25 @@ export default function Header() {
     const tAria = useTranslations("aria");
     const tCta = useTranslations("cta");
     const pathname = usePathname();
+    const locale = useLocale();
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     const navigation = [
         { name: t("home"), href: "/" },
-        { name: t("gallery"), href: "#gallery" },
-        { name: t("testimonials"), href: "#testimonials" },
-        { name: t("contact"), href: "#contact" },
+        { name: t("gallery"), href: "/#gallery" },
+        { name: t("testimonials"), href: "/#testimonials" },
+        { name: t("blog"), href: "/blog" },
+        { name: t("contact"), href: "/#contact" },
     ];
 
     const isActive = (href: string) => {
-        if (href === "/") {
-            return pathname === "/";
-        }
+        if (href === "/") return pathname === "/";
+        if (href.startsWith("/#")) return false;
         return pathname.startsWith(href);
     };
+
+    const isHashLink = (href: string) => href.startsWith("/#");
+    const hashHref = (href: string) => `/${locale}${href.slice(1)}`;
 
     return (
         <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-backdrop-filter:bg-background/60">
@@ -79,20 +83,35 @@ export default function Header() {
 
                 {/* Desktop Navigation */}
                 <div className="hidden lg:flex lg:gap-x-8">
-                    {navigation.map((item) => (
-                        <Link
-                            key={item.name}
-                            href={item.href}
-                            className={cn(
-                                "text-sm font-semibold leading-6 transition-colors hover:text-primary",
-                                isActive(item.href)
-                                    ? "text-primary"
-                                    : "text-muted-foreground"
-                            )}
-                        >
-                            {item.name}
-                        </Link>
-                    ))}
+                    {navigation.map((item) =>
+                        isHashLink(item.href) ? (
+                            <a
+                                key={item.name}
+                                href={hashHref(item.href)}
+                                className={cn(
+                                    "text-sm font-semibold leading-6 transition-colors hover:text-primary",
+                                    isActive(item.href)
+                                        ? "text-primary"
+                                        : "text-muted-foreground"
+                                )}
+                            >
+                                {item.name}
+                            </a>
+                        ) : (
+                            <Link
+                                key={item.name}
+                                href={item.href}
+                                className={cn(
+                                    "text-sm font-semibold leading-6 transition-colors hover:text-primary",
+                                    isActive(item.href)
+                                        ? "text-primary"
+                                        : "text-muted-foreground"
+                                )}
+                            >
+                                {item.name}
+                            </Link>
+                        )
+                    )}
                 </div>
 
                 {/* Language, Theme Toggle & CTA Button */}
@@ -100,7 +119,7 @@ export default function Header() {
                     <LanguageSwitcher />
                     <ThemeToggle />
                     <Button asChild className="rounded-md">
-                        <Link href="#contact">{tCta("contactUs")}</Link>
+                        <a href={hashHref("/#contact")}>{tCta("contactUs")}</a>
                     </Button>
                 </div>
             </nav>
@@ -109,24 +128,42 @@ export default function Header() {
             {mobileMenuOpen && (
                 <div className="lg:hidden">
                     <div className="space-y-1 px-4 pb-3 pt-2">
-                        {navigation.map((item) => (
-                            <Link
-                                key={item.name}
-                                href={item.href}
-                                className={cn(
-                                    "block rounded-lg px-3 py-2 text-base font-medium transition-colors",
-                                    isActive(item.href)
-                                        ? "bg-primary text-primary-foreground"
-                                        : "text-muted-foreground hover:bg-accent hover:text-accent-foreground"
-                                )}
-                                onClick={() => setMobileMenuOpen(false)}
-                            >
-                                {item.name}
-                            </Link>
-                        ))}
+                        {navigation.map((item) =>
+                            isHashLink(item.href) ? (
+                                <a
+                                    key={item.name}
+                                    href={hashHref(item.href)}
+                                    className={cn(
+                                        "block rounded-lg px-3 py-2 text-base font-medium transition-colors",
+                                        isActive(item.href)
+                                            ? "bg-primary text-primary-foreground"
+                                            : "text-muted-foreground hover:bg-accent hover:text-accent-foreground"
+                                    )}
+                                    onClick={() => setMobileMenuOpen(false)}
+                                >
+                                    {item.name}
+                                </a>
+                            ) : (
+                                <Link
+                                    key={item.name}
+                                    href={item.href}
+                                    className={cn(
+                                        "block rounded-lg px-3 py-2 text-base font-medium transition-colors",
+                                        isActive(item.href)
+                                            ? "bg-primary text-primary-foreground"
+                                            : "text-muted-foreground hover:bg-accent hover:text-accent-foreground"
+                                    )}
+                                    onClick={() => setMobileMenuOpen(false)}
+                                >
+                                    {item.name}
+                                </Link>
+                            )
+                        )}
                         <div className="pt-4">
                             <Button asChild className="w-full rounded-md">
-                                <Link href="#contact">{tCta("contactUs")}</Link>
+                                <a href={hashHref("/#contact")} onClick={() => setMobileMenuOpen(false)}>
+                                    {tCta("contactUs")}
+                                </a>
                             </Button>
                         </div>
                     </div>

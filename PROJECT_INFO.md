@@ -62,7 +62,7 @@ Open [http://localhost:3000](http://localhost:3000) to view the site.
 npm run build
 ```
 
-The static site will be generated in the `out/` directory.
+Deploy is on Vercel; each push to the connected branch triggers a new deploy.
 
 ## TODO Before Launch
 
@@ -115,12 +115,7 @@ Edit `/lib/meta.ts` to update:
 
 ## Deployment
 
-This site is configured for static export and can be deployed to:
-- **Vercel** (recommended - zero config)
-- **Netlify**
-- **Cloudflare Pages**
-- **GitHub Pages**
-- Any static hosting service
+Deploy on **Vercel**. Push to the connected branch to trigger a new deploy.
 
 ### Environment Variables
 

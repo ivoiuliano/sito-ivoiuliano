@@ -19,7 +19,7 @@ This is a production-ready template for building static marketing websites with:
 
 ### Core Framework
 - **Next.js 15+** with App Router  
-  Optimized for static site generation (SSG) with `output: 'export'` for maximum performance and reliability.
+  Optimized for static generation (SSG) for maximum performance and reliability.
 
 ### Styling & UI
 - **Tailwind CSS**  
@@ -240,9 +240,9 @@ const jsonData = buildLlmsJson();
 
 #### 2. Build-time generation (`scripts/generate-llms-txt.ts`)
 
-With static export (`output: 'export'`), `/llms.txt` is generated at build time:
+At build time, `/llms.txt` is generated as follows:
 - The `prebuild` script runs `scripts/generate-llms-txt.ts`, which calls `buildLlmsTxt()` and writes to `public/llms.txt`
-- Next.js copies `public/` into `out/`, so `/llms.txt` is served as a static asset
+- Next.js serves `public/` as static assets, so `/llms.txt` is available at the root
 - No server or Route Handler required
 
 ### Benefits
@@ -962,41 +962,13 @@ project/
 
 ## Deployment
 
-### Static Export
+Deploy on **Vercel**. Connect the Git repository; each push to the connected branch (e.g. `main`) triggers a new deploy.
 
-This template is configured for static export:
-
-```typescript
-// next.config.ts
-export default {
-  output: 'export',
-  // ...
-}
-```
-
-### Build Process
+### Build
 
 ```bash
-# Production build
 npm run build
-
-# Output directory
-out/
 ```
-
-### Hosting Options
-
-**Recommended platforms:**
-- **Vercel** – Zero-config, automatic deployments
-- **Netlify** – Drag-and-drop or Git integration
-- **Cloudflare Pages** – Global CDN, free tier
-- **AWS S3 + CloudFront** – Enterprise-grade hosting
-
-**Requirements:**
-- Static hosting (no server-side rendering)
-- Support for client-side routing
-- HTTPS enabled
-- Custom domain support
 
 ### Environment Setup
 

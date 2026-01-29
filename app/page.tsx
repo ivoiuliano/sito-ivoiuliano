@@ -5,10 +5,9 @@ import { useRouter } from "next/navigation";
 import { routing } from "@/i18n/routing";
 
 /**
- * Root Page (static export)
+ * Root Page
  *
- * Redirects to the default locale on the client so no server/headers are needed.
- * All actual content is in app/[locale]/page.tsx.
+ * Redirects to the default locale on the client. All actual content is in app/[locale]/page.tsx.
  */
 export default function RootPage() {
   const router = useRouter();

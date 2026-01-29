@@ -1,7 +1,6 @@
 /**
  * Build-time script: generates public/llms.txt from @/lib/llms.
- * Run before `next build` when using static export (output: 'export').
- * llms.txt is then served as a static asset from public/.
+ * Run before `next build` (prebuild script). Writes llms.txt to public/ for AI assistants.
  */
 
 import { writeFileSync } from "fs";

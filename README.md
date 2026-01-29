@@ -240,9 +240,9 @@ AI assistants can access `/llms.txt` to get structured information about your bu
 
 ## 🚀 Deployment
 
-### Vercel (sito statico)
+### Deploy (Vercel)
 
-Il progetto usa `output: 'export'`: Vercel rileva l’export statico e serve la cartella `out/` senza configurazione extra.
+Il deploy è su Vercel. Collega il repository Git a Vercel; ogni push sul branch connesso (es. `main`) farà un nuovo deploy in automatico.
 
 **1. Push del codice su Git**
 
@@ -253,10 +253,7 @@ Assicurati che il progetto sia su GitHub, GitLab o Bitbucket.
 - Vai su [vercel.com](https://vercel.com) e accedi
 - **Add New…** → **Project**
 - Importa il repository del sito
-- Vercel imposta automaticamente:
-  - **Framework Preset:** Next.js
-  - **Build Command:** `npm run build` (esegue anche `prebuild` → genera `llms.txt`)
-  - **Output Directory:** `out` (usato in automatico con static export)
+- Vercel imposta automaticamente **Framework Preset: Next.js** e **Build Command: `npm run build`** (esegue anche `prebuild` → genera `llms.txt`)
 
 **3. Variabili d’ambiente (opzionale)**
 
@@ -270,20 +267,6 @@ Se usi analytics, in **Settings → Environment Variables** aggiungi:
 Clicca **Deploy**. Ogni push sul branch connesso (es. `main`) farà un nuovo deploy.
 
 **Dominio:** in **Settings → Domains** puoi collegare un dominio personalizzato (es. `www.ivoiuliano.it`).
-
-### Netlify
-
-```bash
-npm run build
-# In Netlify: Build command = npm run build, Publish directory = out
-```
-
-### Altri host statici
-
-```bash
-npm run build
-# Carica la cartella `out/` su qualsiasi hosting statico (Cloudflare Pages, S3+CloudFront, ecc.)
-```
 
 ## 📚 Documentation
 

@@ -15,14 +15,16 @@ export default getRequestConfig(async ({ requestLocale }) => {
     notFound();
 
   // Load all message files for the locale
-  const [globals, landing] = await Promise.all([
+  const [globals, landing, blog] = await Promise.all([
     import(`@/messages/${locale}/globals.json`),
     import(`@/messages/${locale}/landing.json`),
+    import(`@/messages/${locale}/blog.json`),
   ]);
 
   const messages = {
     ...globals.default,
     ...landing.default,
+    blog: blog.default,
   };
 
   return {

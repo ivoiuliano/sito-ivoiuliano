@@ -1,0 +1,11 @@
+{
+  "title": "Blog",
+  "description": "Articoli e novità dalla bottega",
+  "backToList": "Torna agli articoli",
+  "publishedOn": "Pubblicato il",
+  "readMore": "Leggi l'articolo",
+  "noPosts": "Nessun articolo al momento.",
+  "aria": {
+    "articleLink": "Leggi articolo"
+  }
+}

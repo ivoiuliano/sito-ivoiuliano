@@ -1,0 +1,11 @@
+{
+  "title": "Blog",
+  "description": "Articles and news from the workshop",
+  "backToList": "Back to articles",
+  "publishedOn": "Published on",
+  "readMore": "Read article",
+  "noPosts": "No articles yet.",
+  "aria": {
+    "articleLink": "Read article"
+  }
+}

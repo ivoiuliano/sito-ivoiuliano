@@ -4,7 +4,7 @@ import { routing } from "@/i18n/routing";
 export const dynamic = "force-static";
 
 /**
- * Static 404 page for static export (no headers() or other dynamic APIs).
+ * Static 404 page (no headers() or other dynamic APIs).
  * Used when a route doesn't match or when notFound() is called.
  */
 export default function NotFound() {

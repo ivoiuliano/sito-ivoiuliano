@@ -37,7 +37,15 @@ export const routes: RouteConfig[] = [
     priority: 1.0,
     changeFrequency: "weekly",
     title: "Home",
-    description: "Ivo Iuliano - Master Luthier - Handcrafted violins, violas, cellos and baroque instruments",
+    description:
+      "Ivo Iuliano - Master Luthier - Handcrafted violins, violas, cellos and baroque instruments",
+  },
+  {
+    path: "/blog",
+    priority: 0.8,
+    changeFrequency: "weekly",
+    title: "Blog",
+    description: "Articles and news from the workshop",
   },
 ];
 
