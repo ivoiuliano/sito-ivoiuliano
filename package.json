@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "prebuild": "tsx -r tsconfig-paths/register scripts/generate-llms-txt.ts",
-    "publish": "npm run build && git commit -am \"feat: update content\" && git push",
+    "publish": "npm run build && git add . && git commit -am \"feat: update content\" && git push",
     "start": "next start",
     "lint": "eslint"
   },

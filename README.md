@@ -1,5 +1,11 @@
 # Static Next.js Template
 
+## To publish:
+```sh
+npm run publish
+```
+
+
 A production-ready Next.js template for building modern marketing and content websites with internationalization, SEO optimization, and a beautiful squircle design system.
 
 ## ✨ Features
