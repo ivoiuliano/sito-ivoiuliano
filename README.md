@@ -186,6 +186,30 @@ The template uses squircles (smooth continuous curves) instead of standard borde
 
 5. **Add to navigation** (optional) in `components/navigation/Header.tsx`
 
+## 📝 Adding a Blog Article
+
+The blog is localized: articles live in `content/blog/it/` (Italian) and `content/blog/en/` (English). Use the same filename in both folders for the same article in two languages.
+
+1. **Pick the language folder** and copy the template:
+   ```bash
+   # For Italian
+   cp content/blog/it/_template.md content/blog/it/my-article.md
+   # For English (same slug = same article, translated)
+   cp content/blog/en/_template.md content/blog/en/my-article.md
+   ```
+
+2. **Edit the frontmatter** (between the `---` blocks) in each file:
+   - `title` – Article title (shown in the page and in search results)
+   - `description` – Short description for SEO and listing preview (max ~160 characters)
+   - `date` – Publication date (`YYYY-MM-DD`)
+   - `image` – (optional) Path to featured image, e.g. `/images/blog/featured.webp` (place files in `public/images/blog/`)
+
+3. **Write the body** in Markdown below the second `---` (bold, lists, links, headings, images as needed).
+
+4. **Save** – The article URL will be `/[locale]/blog/my-article` (e.g. `/it/blog/my-article`, `/en/blog/my-article`). No code changes or sitemap updates are required; the blog reads from `content/blog` at build time.
+
+**Tip:** To have the article in both languages, keep the same filename in `content/blog/it/` and `content/blog/en/` and translate the content in each file.
+
 ## 🔧 Configuration
 
 ### Environment Variables
@@ -242,31 +266,31 @@ AI assistants can access `/llms.txt` to get structured information about your bu
 
 ### Deploy (Vercel)
 
-Il deploy è su Vercel. Collega il repository Git a Vercel; ogni push sul branch connesso (es. `main`) farà un nuovo deploy in automatico.
+Deploy is on **Vercel**. Connect the Git repository to Vercel; each push to the connected branch (e.g. `main`) triggers a new deploy automatically.
 
-**1. Push del codice su Git**
+**1. Push your code to Git**
 
-Assicurati che il progetto sia su GitHub, GitLab o Bitbucket.
+Make sure the project is on GitHub, GitLab, or Bitbucket.
 
-**2. Importa il progetto su Vercel**
+**2. Import the project on Vercel**
 
-- Vai su [vercel.com](https://vercel.com) e accedi
+- Go to [vercel.com](https://vercel.com) and sign in
 - **Add New…** → **Project**
-- Importa il repository del sito
-- Vercel imposta automaticamente **Framework Preset: Next.js** e **Build Command: `npm run build`** (esegue anche `prebuild` → genera `llms.txt`)
+- Import the site repository
+- Vercel automatically sets **Framework Preset: Next.js** and **Build Command: `npm run build`** (which also runs `prebuild` → generates `llms.txt`)
 
-**3. Variabili d’ambiente (opzionale)**
+**3. Environment variables (optional)**
 
-Se usi analytics, in **Settings → Environment Variables** aggiungi:
+If you use analytics, add these in **Settings → Environment Variables**:
 
 - `NEXT_PUBLIC_GA_ID` – Google Analytics
 - `NEXT_PUBLIC_META_PIXEL_ID` – Meta Pixel
 
 **4. Deploy**
 
-Clicca **Deploy**. Ogni push sul branch connesso (es. `main`) farà un nuovo deploy.
+Click **Deploy**. Each push to the connected branch (e.g. `main`) will trigger a new deploy.
 
-**Dominio:** in **Settings → Domains** puoi collegare un dominio personalizzato (es. `www.ivoiuliano.it`).
+**Domain:** In **Settings → Domains** you can connect a custom domain (e.g. `www.yourdomain.com`).
 
 ## 📚 Documentation
 
