@@ -79,3 +79,8 @@ Per nuove pagine "fisse" (es. "Chi siamo", "Servizi") serve modificare il codice
 | `messages/it/` e `messages/en/` | Testi di menu, pulsanti, ecc. (modificabili se ti è stato spiegato). |
 
 Se hai dubbi su un passo (es. come fare push, errore in fase di deploy), annota il messaggio di errore o lo schermo e chiedi allo sviluppatore: con questa struttura puoi gestire in autonomia gli articoli; il deploy è su Vercel.
+
+
+## 5. Link utili
+- [Vercel](https://vercel.com/)
+- [Github](https://github.com/)
