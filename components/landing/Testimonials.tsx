@@ -21,13 +21,20 @@ export function Testimonials() {
   // Map testimonial keys to their corresponding photos
   const getAvatarPath = (key: string): string => {
     const avatarMap: Record<string, string> = {
+      ahonen: "/images/persone/Iidamari_Ahonen.png",
       gothoni: "/images/persone/Mark_Gothoni.png",
       furusawa: "/images/persone/Kaori_Furusawa.png",
       rohde: "/images/persone/Hartmund_Rhode.png",
       konishi: "/images/persone/Mao_Konishi.png",
-      todicescu: "/images/persone/Alex_todicescu.png",
+      todicescu: "/images/persone/Alex_Todicescu.png",
       pasquier: "/images/persone/Cyrill_Pasquier.png",
-      rome: "/images/persone/Maja_rome.png",
+      rome: "/images/persone/Maja_Rome.png",
+      segawa: "/images/persone/Sachiko_Segawa.png",
+      ranmo: "/images/persone/Sune_Ranmo.png",
+      kang: "/images/persone/Jiyun_Kang.png",
+      leon: "/images/persone/Felipe_Leon.png",
+      susuri: "/images/persone/Jana_Susuri.png",
+      
     };
     return avatarMap[key] || "/images/persone/default.png";
   };
@@ -69,13 +76,19 @@ export function Testimonials() {
   }, [emblaApi, onSelect]);
 
   const testimonialKeys = [
+    "ahonen",
     "gothoni",
+    "segawa",
     "furusawa",
     "rohde",
     "konishi",
     "todicescu",
     "pasquier",
     "rome",
+    "ranmo",
+    "kang",
+    "leon",
+    
   ];
 
   return (

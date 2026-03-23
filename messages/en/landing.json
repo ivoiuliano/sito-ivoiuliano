@@ -38,25 +38,40 @@
         "readMore": "Read more",
         "showLess": "Show less",
         "items": {
-            "gothoni": {
+            "ahonen": {
                 "quote": "I spent a long time looking for a violin capable of producing exactly the kind of sound I imagine when I play. Luckily, this summer I came across an instrument made by Ivo Iuliano in 2024. It is a deep-, healthy-sounding and richly nuanced violin that performs excellently and with great balance across all registers. I keep discovering new qualities in the instrument, and I feel it offers endless possibilities in terms of color and expression. It has become my trusted instrument, one that carries beautifully in any concert hall.",
+                "author": "Iidamari Ahonen",
+                "role": ""
+            },
+            "gothoni": {
+                "quote": "Besides my 2015 Ivo Iuliano violin, all the instruments build by Maestro Iuliano I’ve had the pleasure to play and hear, combine all the advantages of an excellent modern instrument - easy to play, healthy strong sound, carrying extremely well in a big hall - with the mysterious and profound sounds found normally only in great old instruments by Stradivari, Guarneri, Amati etc. I have by far not reached the limits of expression with this violin. On the contrary I keep getting surprised by new hidden qualities, that were just waiting to be discovered. What a great pleasure to be on this kind of endless journey with such a wonderful instrument!",
                 "author": "Mark Gothoni",
-                "role": "Professor für Violine, Universität der Künste Berlin"
+                "role": "Professor für Violine, Universität der Künste Berlin, Mozart Piano Quartet"
             },
             "furusawa": {
                 "quote": "My violin, built in 2015 by Ivo Iuliano has opened many doors for me. I don't think all of it would have been possible without it. Having never been so enthusiastic about a modern violin, my opinion is being shared by so many colleagues and audiences.",
                 "author": "Kaori Furusawa",
-                "role": "Violinist, Prizewinner at several international competitions"
+                "role": "Violinist"
             },
             "rohde": {
                 "quote": "Die Instrumente von Ivo Iuliano packten mich ab der ersten Sekunde. Ein sehr inniges, beseeltes sowie kraftvolles Tembre aus einer großen Epoche, das einem aus dem Herzen spricht und in den Saal hinaus strömt!",
                 "author": "Hartmut Rohde",
                 "role": "Universität der Künste Berlin, Violist | Conductor, Mozart Piano Quartet"
             },
+            "segawa": {
+                "quote": "Les violons de maître Ivo Iuliano: Tout simplement fantastique!",
+                "author": "Sachiko Segawa",
+                "role": "Violinist"
+            },
+            "ranmo": {
+                "quote": "Great viola!",
+                "author": "Sune Ranmo",
+                "role": "Violist"
+            },
             "konishi": {
                 "quote": "Since playing my Iuliano violin (2017) I am finally feeling able to use a whole palate of expression, likewise as a soloist with big symphony orchestra and in chamber music ensembles or in duo with piano. It is an instrument for life!",
                 "author": "Mao Konishi",
-                "role": "Violinist, Prizewinner at several international competitions"
+                "role": "Violinist and violist"
             },
             "todicescu": {
                 "quote": "This outstanding viola was crafted by Ivo Iuliano for me in 2019. It has a warm and projecting sound which is ideal for solo and chamber music and is a high quality instrument.",
@@ -71,8 +86,23 @@
             "rome": {
                 "quote": "I am honestly grateful to be one of the musicians playing the instrument made by Ivo Iuliano. It is a beautiful work with unlimited sound diversity, very comfortable to play, always projecting sound clearly. It is great experience to perform in any kind of acoustics. Looking forward every new day working with it. Very happy....",
                 "author": "Maja Rome",
-                "role": "Musician"
-            }
+                "role": "Violist"
+            },
+            "kang": {
+                "quote": "I've been playing his viola da gamba for more than 10 years already. It has a remarkable projection and resonance. Direct and focused sound on top string, warm and rich sound on the lower strings. It is not so much sensitive as strong against the weather. (I was a bit worried about the Korean extreme weather.) The more I play, the more I love it!",
+                "author": "Jiyun Kang",
+                "role": "Viola da gamba player"
+             },
+            "leon": {
+                "quote": "Estoy muy contento con mi violonchelo barroco que Ivo construyó para mi hace algunos años. Su sonoridad es maravillosa.",
+                "author": "Felipe León Rojas",
+                "role": "Viola da gamba player"
+            },
+            "susuri": {
+                "quote": "Ich habe mich sofort in dieses Cello verliebt. Dieses junge Instrument hatte von Anfang an eine schöne Klangfarbe und Intensität. Es hat riesige Möglichkeiten und eine große Farbpalette, von der intimsten Dunkelheit bis zu großer Offenheit und Stärke! Es ist einfach Cello! Es läßt Zärtlichkeit und 'Unhöflichkeit' zu und reagiert gut und sofort. Schöne und klare Resonanzen kommen im Konzertsaal einfach zum Ausdruck, egal ob Solo oder Kammermusik gespielt wird. Ich bin einfach wunschlos zufrieden!",
+                "author": "Jana Susuri",
+                "role": "Cellist"
+            }         
         }
     },
     "gallery": {
