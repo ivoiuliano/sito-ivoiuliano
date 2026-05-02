@@ -87,7 +87,7 @@ export function Testimonials() {
     "pasquier",
     "rome",
     "ranmo",
-    "franitivich",
+    "franetovich",
     "kang",
     "leon",
     
