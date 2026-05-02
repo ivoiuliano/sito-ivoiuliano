@@ -31,7 +31,11 @@ export default function Header() {
         { name: t("home"), href: "/" },
         { name: t("gallery"), href: "/#gallery" },
         { name: t("testimonials"), href: "/#testimonials" },
-        { name: t("blog"), href: "/blog" },
+       /** 
+        * In data 02/05/2026 sto escudendo la riga seguente da questo codice
+        * per escludere tempotaneamente il la voce blog dal menu di navogazione
+       *{ name: t("blog"), href: "/blog" },
+       */
         { name: t("contact"), href: "/#contact" },
     ];
 

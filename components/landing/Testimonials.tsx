@@ -34,6 +34,7 @@ export function Testimonials() {
       kang: "/images/persone/Jiyun_Kang.png",
       leon: "/images/persone/Felipe_Leon.png",
       susuri: "/images/persone/Jana_Susuri.png",
+      franotovich: "/images/persone/Mjlla_Franotovich.png",
       
     };
     return avatarMap[key] || "/images/persone/default.png";
@@ -86,6 +87,7 @@ export function Testimonials() {
     "pasquier",
     "rome",
     "ranmo",
+    "franitivich",
     "kang",
     "leon",
     

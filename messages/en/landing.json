@@ -10,7 +10,7 @@
     },
     "about": {
         "title": "About Me",
-        "content": "I was born in Duisburg (Germany) in 1970 and lived there until 1981, attended the Scuola Internazionale di Liuteria (IPIALL) in Cremona from 1994 to 1998, where I obtained a diploma, under the supervision of Maestro Ernesto Vaia. Since 1999 I have been interested in the viola da gamba and also in the historical settings of instruments of the violin family. The last years I have been working mostly on instruments in modern setting, using my knowledge from my earlier experience working on ancient instruments. I work in Rovereto, Trento (Italy)."
+        "content": "I was born in Duisburg, Germany, in 1970, where I lived until 1981. I trained at the Scuola Internazionale di Liuteria (IPIALL) in Cremona from 1994 to 1998, graduating under the guidance of Maestro Ernesto Vaia. Since 1999, my work has focused on the viola da gamba and the historical setup of instruments of the violin family. Since 2014, I have primarily worked on instruments in modern setup, drawing on my experience with historical instruments. I am currently based in Rovereto, Trento, Italy."
     },
     "instruments": {
         "title": "Instruments",
@@ -102,7 +102,12 @@
                 "quote": "Ich habe mich sofort in dieses Cello verliebt. Dieses junge Instrument hatte von Anfang an eine schöne Klangfarbe und Intensität. Es hat riesige Möglichkeiten und eine große Farbpalette, von der intimsten Dunkelheit bis zu großer Offenheit und Stärke! Es ist einfach Cello! Es läßt Zärtlichkeit und 'Unhöflichkeit' zu und reagiert gut und sofort. Schöne und klare Resonanzen kommen im Konzertsaal einfach zum Ausdruck, egal ob Solo oder Kammermusik gespielt wird. Ich bin einfach wunschlos zufrieden!",
                 "author": "Jana Susuri",
                 "role": "Cellist"
-            }         
+            },
+                "franotovich": {
+                "quote": "I feel incredibly grateful to have Ivo as my luthier. He knows my violin so well that every time he puts his hands on it, it improves almost instantly. The work he did on the neck last year truly transformed the instrument.",
+                "author": "Mjlla Franetovich",
+                "role": "Violist"
+        }   
         }
     },
     "gallery": {

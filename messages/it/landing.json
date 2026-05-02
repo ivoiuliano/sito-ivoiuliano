@@ -10,7 +10,7 @@
     },
     "about": {
         "title": "Chi Sono",
-        "content": "Sono nato a Duisburg (Germania) nel 1970 e vi ho vissuto fino al 1981. Ho frequentato la Scuola Internazionale di Liuteria (IPIALL) a Cremona dal 1994 al 1998, dove ho ottenuto il diploma, sotto la supervisione del Maestro Ernesto Vaia. Dal 1999 mi interesso della viola da gamba e anche degli assetti storici degli strumenti della famiglia del violino. Negli ultimi anni ho lavorato principalmente su strumenti in assetto moderno, utilizzando le mie conoscenze derivanti dalla mia precedente esperienza con strumenti antichi. Lavoro a Rovereto, Trento (Italia)."
+        "content": "Sono nato a Duisburg, in Germania, nel 1970, dove ho vissuto fino al 1981. Mi sono formato presso la Scuola Internazionale di Liuteria (IPIALL) di Cremona dal 1994 al 1998, diplomandomi sotto la guida del Maestro Ernesto Vaia. Dal 1999 il mio lavoro si è concentrato sulla viola da gamba e sull’assetto storico degli strumenti della famiglia del violino. Dal 2014 mi dedico prevalentemente a strumenti moderni, valorizzando l’esperienza maturata nel lavoro sugli strumenti storici. Attualmente vivo e lavoro a Rovereto, in provincia di Trento."
     },
     "instruments": {
         "title": "Strumenti",
@@ -102,7 +102,12 @@
                 "quote": "Ich habe mich sofort in dieses Cello verliebt. Dieses junge Instrument hatte von Anfang an eine schöne Klangfarbe und Intensität. Es hat riesige Möglichkeiten und eine große Farbpalette, von der intimsten Dunkelheit bis zu großer Offenheit und Stärke! Es ist einfach Cello! Es läßt Zärtlichkeit und 'Unhöflichkeit' zu und reagiert gut und sofort. Schöne und klare Resonanzen kommen im Konzertsaal einfach zum Ausdruck, egal ob Solo oder Kammermusik gespielt wird. Ich bin einfach wunschlos zufrieden!",
                 "author": "Jana Susuri",
                 "role": "Cellist"
-            }         
+            } ,
+            "franotovich": {
+                "quote": "I feel incredibly grateful to have Ivo as my luthier. He knows my violin so well that every time he puts his hands on it, it improves almost instantly. The work he did on the neck last year truly transformed the instrument.",
+                "author": "Mjlla Franetovich",
+                "role": "Violist"
+        }        
             
         }
     },
