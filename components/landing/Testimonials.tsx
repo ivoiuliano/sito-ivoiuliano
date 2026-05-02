@@ -34,7 +34,7 @@ export function Testimonials() {
       kang: "/images/persone/Jiyun_Kang.png",
       leon: "/images/persone/Felipe_Leon.png",
       susuri: "/images/persone/Jana_Susuri.png",
-      franotovich: "/images/persone/Mjlla_Franotovich.png",
+      franetovich: "/images/persone/Mjlla_Franetovich.png",
       
     };
     return avatarMap[key] || "/images/persone/default.png";
